@@ -14,3 +14,7 @@ sentence[grep3]
 sentence[grep(pattern = 'e.?e', x = sentence)] #? makes a pattern optional (matches 0 or 1 times)
 sentence[grep(pattern = 'e.*e', x = sentence)] #* lets a pattern be optional or repeat (matches any number of times, including 0)
 sentence[grep(pattern = 'e.+e', x = sentence)] #+ lets a pattern repeat (matches at least once)
+gsub_out <- gsub(pattern = 'a.e', x = sentence, replacement = '!!!') #Replaces words with characters a and e with !!!
+gsub_out
+gsub2 <- gsub(pattern='t', x=sentence, replacement='?') #Replaces all of the letter t's with ?
+gsub2
