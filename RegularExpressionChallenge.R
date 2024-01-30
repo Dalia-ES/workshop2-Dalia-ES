@@ -12,5 +12,10 @@ gsub_out
 colnames(dung_beetles) <- gsub_out #Replaces the column names in the data set with the corrected ones
 dung_beetles
 
-grep_out <- grep(pattern='^O.*s$', x=species) #Finds all the species where the genus starts with O and the specific epthet ends in s
+grep_out <- grep(pattern='^O.*s$', x=species) #Finds all the species where the genus starts with O and the specific epithet ends in s
 species[grep_out]
+
+grep_out2 <- grep(pattern='^O', x=species)
+species[grep_out2]
+grep_out3 <- grep(pattern='y$', x=dung_beetles)
+grep_out3
