@@ -9,3 +9,5 @@ species[grep_out2]
 gsub_out <- gsub('Copis', 'Copris',
             gsub('Microcopis', 'Microcopris', x=species))
 gsub_out
+colnames(dung_beetles) <- gsub_out #Replaces the column names in the data set with the corrected ones
+dung_beetles
